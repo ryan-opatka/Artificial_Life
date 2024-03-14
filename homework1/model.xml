@@ -1,0 +1,29 @@
+<mujoco>
+    <option gravity="0 0 -9.81"/>
+    <worldbody>
+        <light diffuse=".5 .5 .5" pos="0 0 3" dir="0 0 -1"/>
+        <geom type="plane" size="5 5 0.1" rgba=".9 .5 .9 1"/>
+        <body name="block0" pos="0 0 0">
+            <joint type="free"/>
+            <geom type="box" size="0.07528906749143635 0.05479215936285684 0.0798521647036522" rgba="1 0 0 1" euler="0 90 0"/>
+    
+            <body name="block1" pos="0 0.09368357249356182 0">
+                <joint name="joint0" pos="0 -0.038891413130704974 0" type="hinge" axis="0 1 0" range="-15 0"/>
+                <geom type="box" size="0.045323813014273094 0.038891413130704974 0.07099407188018585" rgba="1 0 0 1" euler="0 90 0"/>
+        
+                </body>
+                
+            <body name="block2" pos="0 0.14621832728977727 0">
+                <joint name="joint1" pos="0 -0.03421775051418366 0" type="hinge" axis="0 1 0" range="-15 0"/>
+                <geom type="box" size="0.0902197479771291 0.03421775051418366 0.06277217585596118" rgba="1 0 0 1" euler="0 90 0"/>
+        
+                </body>
+                
+            <body name="block3" pos="0 0.2610946632060267 0">
+                <joint name="joint2" pos="0 -0.05281380388782524 0" type="hinge" axis="0 1 0" range="-15 0"/>
+                <geom type="box" size="0.07598773552729471 0.05281380388782524 0.07266153785685003" rgba="1 0 0 1" euler="0 90 0"/>
+        
+            </body>
+        </body>
+    </worldbody>
+</mujoco>
