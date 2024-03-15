@@ -2,18 +2,5 @@
 Artificial Life CS 396 Repo 
 
 
-FIND FINAL CODE IN MASTER BRANCH
+All code exists in the master branch. Go check it out!!
 
-
-
-For the final, look in the folder final_code and change it to be your current working directory.
-
-If you would like to evolve your own set of things and plot a fitness curve, simply run main.py after downloading the necessary packages.
-
-If you would like to check out some already generated organisms, run test.py and follow the prompt!
-
-Here is a link to the video! 
-
-https://youtu.be/O2xghp5T5Wk
-
-Thank you.
