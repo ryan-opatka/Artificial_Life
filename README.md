@@ -2,6 +2,9 @@
 Artificial Life CS 396 Repo 
 
 
+FIND FINAL CODE IN MASTER BRANCH
+
+
 
 For the final, look in the folder final_code and change it to be your current working directory.
 
