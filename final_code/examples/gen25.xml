@@ -1,0 +1,32 @@
+<mujoco model = "worm">
+    <option gravity="0 0 -20"/>
+    <worldbody>
+        <light diffuse=".8 .8 .8" pos="0 0 5" dir="0 0 -1"/>
+        <geom type="plane" size="50 50 0.1" rgba=".9 .5 .9 1"/>
+        <body name="body0" euler="0 0 0">
+            <joint type="free" axis="-1 0 0" pos="0 0 0"/>
+            <geom type="ellipsoid" size="0.03097914660593548" rgba="4.6778511374962575 0 2.238682922239946 0.9" fromto="0 0 0 0 0 0.09" mass="10" friction = "0.7338749768879212 0.009870748189291966 0.0019719643605979314"/>
+
+                <body pos="0 0 0.045439594613779694" euler="0 0 0">
+                <joint name="joint1" type="hinge" axis="-1 0 0" pos="0 0 0" range="-15 15"/>
+                <geom type="ellipsoid" size="0.045439594613779694" fromto="0 0 0 0 0 0.09" rgba="0 11.405338248058703 2.0739713968943256 0.9" mass="10" friction = "0.8852789031836641 0.0007708771283257411 0.00026887775519704807"/>
+
+                <body pos="0 0 0.04674959291909002" euler="0 0 0">
+                    <joint name="joint2" type="hinge" axis="-1 0 0" pos="0 0 0" range="-15 15"/>
+                    <geom type="ellipsoid" size="0.04674959291909002" fromto="0 0 0 0 0 0.09" rgba="0 11.734147822691595 3.66743263337669 0.9" mass="10" friction = "1.1195667382876877 0.007832073266219585 0.0006339976221997871"/>
+
+                    <body pos="0 0 0.03309162374638152" euler="0 0 0">
+                        <joint name="joint3" type="hinge" axis="-1 0 0" pos="0 0 0" range="-15 15"/>
+                        <geom type="ellipsoid" size="0.03309162374638152" fromto="0 0 0 0 0 0.09" rgba="0 8.305997560341762 5.550947274525268 0.9" mass="10" friction = "1.3276531294041964 0.009383288135071558 0.002485754329153411"/>
+
+                    </body>
+                </body>
+            </body>
+        </body>
+    </worldbody>
+    <actuator>
+        <motor name="seg0"  gear="38"  joint="joint1"/>
+        <motor name="seg1"  gear="38"  joint="joint2"/>
+        <motor name="seg2"  gear="38"  joint="joint3"/>
+    </actuator>
+</mujoco>

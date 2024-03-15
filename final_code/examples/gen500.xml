@@ -1,0 +1,26 @@
+<mujoco model = "worm">
+    <option gravity="0 0 -20"/>
+    <worldbody>
+        <light diffuse=".8 .8 .8" pos="0 0 5" dir="0 0 -1"/>
+        <geom type="plane" size="50 50 0.1" rgba=".9 .5 .9 1"/>
+        <body name="body0" euler="0 0 0">
+            <joint type="free" axis="-1 0 0" pos="0 0 0"/>
+            <geom type="ellipsoid" size="0.013632886316917406" rgba="2.0585658338545283 0 7.65221606990804 0.9" fromto="0 0 0 0 0 0.09" mass="10" friction = "0.6164202813673366 0.004719994129628059 0.003104594159246232"/>
+
+                <body pos="0 0 0.01379209543052772" euler="0 0 0">
+                <joint name="joint1" type="hinge" axis="-1 0 0" pos="0 0 0" range="-15 15"/>
+                <geom type="ellipsoid" size="0.01379209543052772" fromto="0 0 0 0 0 0.09" rgba="0 3.461815953062458 7.4022642311096325 0.9" mass="10" friction = "1.0487946618644226 0.006443536225557139 0.000990121051051911"/>
+
+                <body pos="0 0 0.053037262113457016" euler="0 0 0">
+                    <joint name="joint2" type="hinge" axis="-1 0 0" pos="0 0 0" range="-15 15"/>
+                    <geom type="ellipsoid" size="0.053037262113457016" fromto="0 0 0 0 0 0.09" rgba="0 13.31235279047771 1.9262881028908767 0.9" mass="10" friction = "1.996078889541937 0.008926303944667306 0.0017459894841186537"/>
+
+                </body>
+            </body>
+        </body>
+    </worldbody>
+    <actuator>
+        <motor name="seg0"  gear="60"  joint="joint1"/>
+        <motor name="seg1"  gear="60"  joint="joint2"/>
+    </actuator>
+</mujoco>

@@ -1,0 +1,92 @@
+<mujoco model = "worm">
+    <option gravity="0 0 -20"/>
+    <worldbody>
+        <light diffuse=".8 .8 .8" pos="0 0 5" dir="0 0 -1"/>
+        <geom type="plane" size="50 50 0.1" rgba=".9 .5 .9 1"/>
+        <body name="body0" euler="0 0 0">
+            <joint type="free" axis="-1 0 0" pos="0 0 0"/>
+            <geom type="ellipsoid" size="0.048778971419918916" rgba="7.365624684407757 0 3.493804519474031 0.9" fromto="0 0 0 0 0 0.09" mass="10" friction = "1.662816138686277 0.005206068447643467 0.0003030653419598145"/>
+
+                <body pos="0 0 0.014904019871201366" euler="0 0 0">
+                <joint name="joint1" type="hinge" axis="-1 0 0" pos="0 0 0" range="-15 15"/>
+                <geom type="ellipsoid" size="0.014904019871201366" fromto="0 0 0 0 0 0.09" rgba="0 3.740908987671543 3.7472021416465062 0.9" mass="10" friction = "0.5099241126344687 0.006306635260727016 0.004563126057399651"/>
+
+                <body pos="0 0 0.03211561307373003" euler="0 0 0">
+                    <joint name="joint2" type="hinge" axis="-1 0 0" pos="0 0 0" range="-15 15"/>
+                    <geom type="ellipsoid" size="0.03211561307373003" fromto="0 0 0 0 0 0.09" rgba="0 8.061018881506238 2.1938780259543216 0.9" mass="10" friction = "1.8029553485293304 0.001818848437137768 0.0014172228042979868"/>
+
+                    <body pos="0 0 0.022205150117848686" euler="0 0 0">
+                        <joint name="joint3" type="hinge" axis="-1 0 0" pos="0 0 0" range="-15 15"/>
+                        <geom type="ellipsoid" size="0.022205150117848686" fromto="0 0 0 0 0 0.09" rgba="0 5.57349267958002 2.653277627097777 0.9" mass="10" friction = "0.9577093101739863 0.0027131036008561627 0.002698299512244781"/>
+
+                        <body pos="0 0 0.033663750394230384" euler="0 0 0">
+                            <joint name="joint4" type="hinge" axis="-1 0 0" pos="0 0 0" range="-15 15"/>
+                            <geom type="ellipsoid" size="0.033663750394230384" fromto="0 0 0 0 0 0.09" rgba="0 8.449601348951827 4.379272236109639 0.9" mass="10" friction = "0.8486055422251408 0.0005433170876752325 0.0038178688454210035"/>
+
+                            <body pos="0 0 0.034776595013232096" euler="0 0 0">
+                                <joint name="joint5" type="hinge" axis="-1 0 0" pos="0 0 0" range="-15 15"/>
+                                <geom type="ellipsoid" size="0.034776595013232096" fromto="0 0 0 0 0 0.09" rgba="0 8.728925348321257 5.055910342081544 0.9" mass="10" friction = "1.9351731588423977 0.009197507441940696 0.0019245793311117698"/>
+
+                                <body pos="0 0 0.029524486131426768" euler="0 0 0">
+                                    <joint name="joint6" type="hinge" axis="-1 0 0" pos="0 0 0" range="-15 15"/>
+                                    <geom type="ellipsoid" size="0.029524486131426768" fromto="0 0 0 0 0 0.09" rgba="0 7.4106460189881185 3.023017392282484 0.9" mass="10" friction = "1.2588581492254107 0.0020517113075822846 0.0012723792413141372"/>
+
+                                    <body pos="0 0 0.027067026203070367" euler="0 0 0">
+                                        <joint name="joint7" type="hinge" axis="-1 0 0" pos="0 0 0" range="-15 15"/>
+                                        <geom type="ellipsoid" size="0.027067026203070367" fromto="0 0 0 0 0 0.09" rgba="0 6.793823576970662 6.738834536505464 0.9" mass="10" friction = "1.7214352777778088 0.0037051011559178595 0.00043348445215628863"/>
+
+                                        <body pos="0 0 0.01792036078135574" euler="0 0 0">
+                                            <joint name="joint8" type="hinge" axis="-1 0 0" pos="0 0 0" range="-15 15"/>
+                                            <geom type="ellipsoid" size="0.01792036078135574" fromto="0 0 0 0 0 0.09" rgba="0 4.498010556120291 1.6601463461723858 0.9" mass="10" friction = "0.9301570868212932 0.0019267226051458732 0.00252966892844108"/>
+
+                                            <body pos="0 0 0.02610782672819823" euler="0 0 0">
+                                                <joint name="joint9" type="hinge" axis="-1 0 0" pos="0 0 0" range="-15 15"/>
+                                                <geom type="ellipsoid" size="0.02610782672819823" fromto="0 0 0 0 0 0.09" rgba="0 6.553064508777756 1.4914730001483707 0.9" mass="10" friction = "1.3188807328591257 0.001592601677557043 0.00044137540145625434"/>
+
+                                                <body pos="0 0 0.02113633305361116" euler="0 0 0">
+                                                    <joint name="joint10" type="hinge" axis="-1 0 0" pos="0 0 0" range="-15 15"/>
+                                                    <geom type="ellipsoid" size="0.02113633305361116" fromto="0 0 0 0 0 0.09" rgba="0 5.305219596456402 6.461532927051762 0.9" mass="10" friction = "1.2718306931353145 0.008954707143191609 0.0038872596552041055"/>
+
+                                                    <body pos="0 0 0.04812917713700878" euler="0 0 0">
+                                                        <joint name="joint11" type="hinge" axis="-1 0 0" pos="0 0 0" range="-15 15"/>
+                                                        <geom type="ellipsoid" size="0.04812917713700878" fromto="0 0 0 0 0 0.09" rgba="0 12.080423461389204 6.259859365084156 0.9" mass="10" friction = "1.4630890232314517 0.005572368356415531 0.0028514373010437334"/>
+
+                                                        <body pos="0 0 0.022903479255072048" euler="0 0 0">
+                                                            <joint name="joint12" type="hinge" axis="-1 0 0" pos="0 0 0" range="-15 15"/>
+                                                            <geom type="ellipsoid" size="0.022903479255072048" fromto="0 0 0 0 0 0.09" rgba="0 5.748773293023084 3.347389299134219 0.9" mass="10" friction = "1.8196656452800792 0.0012380282708935974 0.0014959841929647539"/>
+
+                                                            <body pos="0 0 0.031392577882319944" euler="0 0 0">
+                                                                <joint name="joint13" type="hinge" axis="-1 0 0" pos="0 0 0" range="-15 15"/>
+                                                                <geom type="ellipsoid" size="0.031392577882319944" fromto="0 0 0 0 0 0.09" rgba="0 7.879537048462306 5.08738386346508 0.9" mass="10" friction = "0.6571247421017459 0.006694886715483285 0.003079237215882157"/>
+
+                                                            </body>
+                                                        </body>
+                                                    </body>
+                                                </body>
+                                            </body>
+                                        </body>
+                                    </body>
+                                </body>
+                            </body>
+                        </body>
+                    </body>
+                </body>
+            </body>
+        </body>
+    </worldbody>
+    <actuator>
+        <motor name="seg0"  gear="49"  joint="joint1"/>
+        <motor name="seg1"  gear="49"  joint="joint2"/>
+        <motor name="seg2"  gear="49"  joint="joint3"/>
+        <motor name="seg3"  gear="49"  joint="joint4"/>
+        <motor name="seg4"  gear="49"  joint="joint5"/>
+        <motor name="seg5"  gear="49"  joint="joint6"/>
+        <motor name="seg6"  gear="49"  joint="joint7"/>
+        <motor name="seg7"  gear="49"  joint="joint8"/>
+        <motor name="seg8"  gear="49"  joint="joint9"/>
+        <motor name="seg9"  gear="49"  joint="joint10"/>
+        <motor name="seg10"  gear="49"  joint="joint11"/>
+        <motor name="seg11"  gear="49"  joint="joint12"/>
+        <motor name="seg12"  gear="49"  joint="joint13"/>
+    </actuator>
+</mujoco>
